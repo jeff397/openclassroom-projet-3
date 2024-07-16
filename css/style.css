@@ -54,10 +54,11 @@ nav a:hover{
 }
 
 #logo{
+    position: absolute;
     width: 60px;
     height: 19px;
-    margin-right: auto;
-    margin-top: 20px;
+    margin-left: 25px;
+    margin-top: 50px;
 }
 
 /****** bouton de recherche et filtres ***********/
