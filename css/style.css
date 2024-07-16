@@ -172,7 +172,7 @@ a {
     background-color: white;
     padding: 5px;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
 }
 
 .card img {
@@ -306,7 +306,7 @@ a {
 .photo{
     background-color: white;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
 }
 
 .photo img{
