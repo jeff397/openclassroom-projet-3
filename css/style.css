@@ -33,7 +33,7 @@ body {
 }
 
 .container>div{
-    padding-top: 35px;
+    margin-top: 35px;
     
     
     
@@ -80,12 +80,15 @@ nav a:hover{
 
 
 
-.research h1{
+.research h2{
+    margin-bottom: 0;
     font-size: 22px;
     
 }
 
 .research p{
+    margin-top: 8px;
+    margin-bottom: 0;
     font-size: 16px;
 
 }
@@ -130,13 +133,19 @@ nav a:hover{
 .filter{
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    
     gap: 25px;
 }
 
-.filter h1{
+.filter h2{
+    margin:0;
     font-size: 18px;
     
+}
+
+.fourbuttons{
+    display: flex;
+    gap: 25px;
 }
 
 .buttons{
@@ -159,7 +168,6 @@ nav a:hover{
 }
 
 .information{
-    padding-top: 33px;
     font-size: 16px;
 } 
 
@@ -211,7 +219,7 @@ a {
 .seemore{
     font-weight: bold;
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 30px;
 } 
 
 /****** Hebergements And Populaires ***********/
@@ -307,7 +315,7 @@ a {
 .activities-cards{
     margin: 30px;    
     display: flex;
-    flex-wrap: wrap;
+    
     gap: 25px;
    
 }
@@ -315,6 +323,7 @@ a {
 
 .photo{
     background-color: white;
+    height:439px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
 }
@@ -322,31 +331,33 @@ a {
 .photo img{
     object-fit: cover;
     width: 300px;
-    height: 440px;
+    height: 380px;
     border-radius: 20px 20px 0 0;
 }
 
-.photo .card-title{
-    padding: 0 10px 5px;
+
+.photo h3{
+    margin-left: 19px;
+    margin-top: 20px;
 }
 
 /*************Footer**********/
 
 footer{
     width: 100%;
-    height: 170px;
+    height: auto;
     
     background-color: var(--main-bg-color);
 }
 
 .about{
-    padding-left: 30px;
-    display: flex;
-    gap: 250px;
-   
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-left: 20px;
+   gap:30px
 }
 
-.about h1{
+.about h2{
     font-size: 18px;
 }
 
@@ -364,6 +375,33 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    
+    body{
+        width:100%;
+        max-width:1024px;
+    }
+    
+     .filter{
+        flex-direction: column;
+        align-items: flex-start;
+
+  }
+
+  .photo{
+    width:193.5px;
+    height: 270px;
+  }
+
+  .photo img{
+    width: 193.5px;
+    height: 200px;
+  }
+
+    
+   
+    
+   
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -385,6 +423,11 @@ footer{
 
     .populaires-cards a {
         width: 30%;
+    }
+
+    .populaires-cards img{
+        width: 91.56px;
+        height: 146px;
     }
 
     .populaires-cards .card-title {
