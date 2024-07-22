@@ -14,7 +14,6 @@
 }
 
 body {
-    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -26,20 +25,43 @@ body {
     box-sizing: border-box;
 }
 
-.container{
-    width: 100%;
-    height:280px;
-    
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.container>div{
-    margin-top: 35px;
-    
-    
-    
+.section-title {
+    margin: 0;
+    font-size: 22px;
 }
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+    width: 230px;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
 /****** Header ***********/
-
 header{
     width: 100%;
     height: 80px;
@@ -76,21 +98,25 @@ nav a:hover{
     margin-top: 50px;
 }
 
-/****** bouton de recherche et filtres ***********/
+/****** Boutons de recherche et filtres ***********/
 
+.research{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
 
-
-.research h2{
+.research h1, p{
+    margin-top: 0;
     margin-bottom: 0;
-    font-size: 22px;
-    
+    }
+
+.research h1{
+    font-size:22px;
 }
 
 .research p{
-    margin-top: 8px;
-    margin-bottom: 0;
     font-size: 16px;
-
+    margin-top:8px;
 }
 
 .searchbutton {
@@ -176,56 +202,16 @@ nav a:hover{
     font-weight: bold;
 }
 
-/****** hebergements et populaires général ***********/
-
-a {
-    color: inherit;
-    text-decoration: none;
+.container>div{
+    margin-top:35px;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card  {
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
-}
-
-.card img {
-    object-fit: cover;
-    width: 230px;
-    height: 110px;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
-
-/****** information ***********/
-
-.seemore{
-    font-weight: bold;
-    font-size: 18px;
-    padding-top: 30px;
-} 
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top:35px;
 }
 
 .hebergements-and-populaires section {
@@ -251,7 +237,14 @@ a {
 .hebergements-cards .card-rating{
     padding-left: 10px;
 }
-    
+
+/****** information ***********/
+
+.seemore{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;
+} 
 
 /****** Populaires ***********/
 .populaires {
@@ -298,29 +291,28 @@ a {
     margin-bottom: 5px;
 }
 
-/******Activité********/
+/****** Activités ***********/
 
-.Activities{
+.activities{
     width: 100%;
     height: 560px;
-    padding-bottom: 100px;
+    margin-top: 35px;
+    margin-bottom: 35px;
   
 }
 
 .activities-title{
+    margin: 0;
     padding-top: 30px;
     margin-left: 30px;
 }
 
 .activities-cards{
-    margin: 30px;    
     display: flex;
-    
+    margin-top: 30px;
+    padding-bottom: 30px;
     gap: 25px;
-   
 }
-
-
 .photo{
     background-color: white;
     height:439px;
@@ -346,24 +338,32 @@ a {
 footer{
     width: 100%;
     height: auto;
-    
     background-color: var(--main-bg-color);
 }
 
-.about{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   margin-left: 20px;
-   gap:30px
+.footerlist{
+    display: flex;
+    padding-left:30px;
+
+    
 }
 
-.about h2{
+.box{
+    flex-grow: 1;
+}
+.footerlist h1{
     font-size: 18px;
+    
 }
 
-.about p{
+.footerlist p{
     font-size: 16px;
+    line-height: 2;
+    
 }
+
+
+
 
 
 
@@ -375,7 +375,7 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    
+
     body{
         width:100%;
         max-width:1024px;
@@ -397,10 +397,11 @@ footer{
     height: 200px;
   }
 
+  .activities{
     
-   
+    height: auto;
     
-   
+}
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -423,11 +424,6 @@ footer{
 
     .populaires-cards a {
         width: 30%;
-    }
-
-    .populaires-cards img{
-        width: 91.56px;
-        height: 146px;
     }
 
     .populaires-cards .card-title {
