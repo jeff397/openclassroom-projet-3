@@ -94,7 +94,6 @@ nav a:hover{
     position: absolute;
     width: 60px;
     height: 19px;
-    margin-left: 25px;
     margin-top: 50px;
 }
 
@@ -142,7 +141,7 @@ nav a:hover{
 .searchbutton input::placeholder{
     font-weight: bold;
     font-size: 18px;
-    
+  
 }
 
 .bluesearch{
@@ -169,35 +168,34 @@ nav a:hover{
     
 }
 
-.fourbuttons{
+.filter-buttons {
     display: flex;
     gap: 25px;
 }
 
-.buttons{
+.filter-buttons button {
+    height: 50px;
+    background-color: white;
     border: 2px solid var(--filter-bg-color);
     border-radius: 25px;
-    padding: 15px;
-    padding-right: 45px;
+    padding: 4px 19px;
 }  
 
-.buttons i{
-    font-size: 30px;
+.filter-buttons button i{
+    font-size: 22px;
     vertical-align: middle;
-
 }
 
-.buttons:hover{
+.filter-buttons button:hover{
     background-color: #DEEBFF;
     cursor: pointer;
-    
 }
 
 .information{
     font-size: 16px;
 } 
 
-.buttons span{
+.filter-buttons button span{
     margin-left: 10px;
     font-weight: bold;
 }
@@ -310,21 +308,27 @@ nav a:hover{
 .activities-cards{
     display: flex;
     margin-top: 30px;
-    padding-bottom:30px ;
+    padding-bottom: 30px;
     gap: 30px;
 }
+
+.activities-cards a {
+    flex-grow: 1;
+    flex-basis: 0;
+    /* border: 1px solid; */
+}
+
 .photo{
-    background-color: white;
-    width: 297px;
     height:439px;
+    background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
 }
 
 .photo img{
     object-fit: cover;
-    width: 297px;
     height: 380px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
@@ -391,13 +395,13 @@ footer{
 
   .photo{
     
-    width:193.5px;
+  
     height: 270px;
   }
 
   .photo img{
       
-    width: 193.5px;
+   
     height: 200px;
   }
 
