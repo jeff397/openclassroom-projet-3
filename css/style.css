@@ -145,7 +145,7 @@ nav a:hover{
   
 }
 
-/* .bluesearch{
+.bluesearch{
     border: 1px;
     width: 130px;
     border-radius: 0 25px 25px 0;
@@ -154,7 +154,7 @@ nav a:hover{
     color: white;
     font-weight: bold;
     cursor: pointer;
-} */
+}
 
 .filter{
     display: flex;
@@ -292,7 +292,7 @@ nav a:hover{
 
 /****** Activités ***********/
 
-/* .activities{
+ .activities{
     width: 100%;
     height: 560px;
     margin-top: 35px;
@@ -317,7 +317,7 @@ nav a:hover{
     flex-grow: 1;
     flex-basis: 0;
     /* border: 1px solid; */
-/* }
+ }
 
 .photo{
     height:439px;
@@ -344,12 +344,13 @@ nav a:hover{
 footer{
     width: 100%;
     height: auto;
-    background-color: var(--main-bg-color);
+    
 }
 
 .footerlist{
     display: flex;
     padding-left:30px;
+    background-color: var(--main-bg-color);
 
     
 }
