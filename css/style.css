@@ -468,6 +468,16 @@ footer{
         padding: 30px;
     }
 
+    .menunav{
+        padding: 0;
+        gap: 0;
+    }
+
+    li.menuhebergements, li.menuactivities{
+        width: 100%;
+        text-align: center;
+    }
+
     .filter-buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
