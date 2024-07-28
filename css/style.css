@@ -473,10 +473,25 @@ footer{
         gap: 0;
     }
 
+    nav a{
+        padding-top: 0;
+        border-top: none;        
+    }
+    
     li.menuhebergements, li.menuactivities{
         width: 100%;
         text-align: center;
+        padding-bottom: 15px;
     }
+    
+    li.menuhebergements:hover, li.menuactivities:hover{
+        border-bottom: 3px solid white;
+        border-color: var(--main-color);
+        color: var(--main-color);
+    }
+
+    
+
 
     .filter-buttons{
         display: grid;
