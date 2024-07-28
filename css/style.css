@@ -49,7 +49,7 @@ a {
     border-radius: 20px 20px 0 0;
 }
 
-.card-title {
+.card-title h3{
     font-size: 16px;
 }
 
@@ -154,6 +154,10 @@ nav a:hover{
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+.bluesearch_phone{
+    display:none;
 }
 
 .filter{
@@ -415,6 +419,7 @@ footer{
 
     .hebergements-and-populaires {
         flex-direction: column;
+       
     }
 
     .hebergements {
@@ -437,11 +442,11 @@ footer{
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -483,11 +488,44 @@ footer{
         text-align: center;
         padding-bottom: 15px;
     }
-    
+
     li.menuhebergements:hover, li.menuactivities:hover{
         border-bottom: 3px solid white;
         border-color: var(--main-color);
         color: var(--main-color);
+    }
+
+    .bluesearch{
+        display: none;
+    }
+
+    .searchbutton{
+        border: 1px solid var(--main-bg-color);
+        border-radius: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .searchbutton .bluesearch_phone i{
+        background-color: var(--main-color);
+        padding: 17px;
+        border-radius: 15px;
+    }
+
+    .bluesearch_phone{
+        display: block;
+        padding:0;
+        background:none;
+        border:none;
+
+    }
+    
+    .searchbutton input{
+        padding: 0;
+        width: 100%;
+        border-right-width: 0;
+        border: none;
     }
 
     
@@ -503,8 +541,16 @@ footer{
         border-radius:0;
     }
 
-    .hebergements-and-populaires{
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
 
+    }
+
+    .hebergements-cards .card img{
+        width: 335px;
+        height: 124px;
+        border-radius: 20px 20px 0 0;
+        
     }
 
     .populaires{
@@ -514,19 +560,24 @@ footer{
 
     .populaires-cards{
         flex-direction: column;
+        width:335px;
     }
 
     .populaires-cards .card{
         width: 335px;
+        
 
     }
 
     .card{
         width: 335px;
+        
     }
 
     .card img{
-        width: 335px;
+        width: 111px;
+        
+        border-radius: 20px 0 0 20px;
     }
 
      .research{
