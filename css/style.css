@@ -94,7 +94,7 @@ nav a:hover{
     
     width: 60px;
     height: 19px;
-    margin-top: 50px;
+    margin: 30px 0 30px 0;
 }
 
 /****** Boutons de recherche et filtres ***********/
@@ -327,7 +327,7 @@ nav a:hover{
     height:439px;
     background-color: white;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .photo img{
@@ -335,6 +335,12 @@ nav a:hover{
     height: 380px;
     width: 100%;
     border-radius: 20px 20px 0 0;
+}
+
+.photo .card-title{
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 19px;
 }
 
 
@@ -387,39 +393,25 @@ footer{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    /*général*/
+
     body{
         width:100%;
         max-width:1024px;
     }
+
+    /*recherche et filtres*/
     
-     .filter{
-         
+    .filter{         
         flex-direction: column;
         align-items: flex-start;
-
-  }
-
-  .photo{
+    }
     
-  
-    height: 270px;
-  }
-
-  .photo img{
-      
-   
-    height: 200px;
-  }
-
-  .activities{
+    /*hebergements and populaires*/
     
-    height: auto;
-    
-}
-
     .hebergements-and-populaires {
         flex-direction: column;
-       
+        
     }
 
     .hebergements {
@@ -430,29 +422,58 @@ footer{
         width: 100%;
         margin-top: 50px;
     }
-
+    
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
+    
     .populaires-cards a {
         width: 30%;
     }
-
+    
     .populaires-cards .card-title {
         font-size: 16px;
     }
-
+    
     .populaires-cards .card-subtitle {
-        font-size: 14px;
+        font-size: 14px;   
+     }
+
+
+    /*activities*/
+
+    .photo{        
+        width: 193px;
+        height: 270px;
     }
+
+  .photo img{    
+        height: 200px;
+  }
+
+  .activities{    
+        height: auto;    
+}
+
+.photo .card-title{
+        padding:25px 19px;
+}
+
+h3.card-title_second{
+        margin: 0;
+        padding: 16px;
+        font-size: 16px 19px;
+}
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
     /* général */
+
     body{
         width: 100%;
         max-width: 768px;
@@ -628,10 +649,12 @@ footer{
     }
 
     .photo{
+        width: 335px;
         height: 200px;
     }
 
     .photo img{
+        width: 335px;
         height:141px;
     }
 
