@@ -377,8 +377,8 @@ p.card-subtitle{
     margin-top: 20px;
 }
 
-*/ */
-/*************Footer**********/
+
+/*************footer**********/
 
 footer {
     width: 100%;
@@ -477,8 +477,7 @@ footer {
 
     h3.card-title_second {
         margin: 0;
-        padding: 16px;
-        font-size: 16px 19px;
+        padding: 16px;        
     }
 
 }
@@ -586,6 +585,10 @@ footer {
 
 
     /*hebergements and populaires*/
+
+    #hebergements {
+        background-color: white;
+    }
 
     .hebergements-and-populaires section {
         border-radius: 0;
