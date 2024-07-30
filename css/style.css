@@ -120,7 +120,7 @@ p {
     margin-top: 8px;
 }
 
-.searchbutton {
+#formdoc {
     display: flex;
 
 
@@ -537,11 +537,10 @@ footer {
     /*recherche et filtre*/
     
     .research {
-        
         padding: 0 20px;
     }
 
-    .searchbutton {
+    #formdoc {
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
         width: 100%;
