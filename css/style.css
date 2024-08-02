@@ -212,6 +212,9 @@ p {
 }
 
 .information {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
 }
 
@@ -220,6 +223,7 @@ p {
     border-radius: 50px;
     background: var(--main-color);
     color: white;
+    font-size: 24px;
 }
 
 .filter-buttons button span {
@@ -380,6 +384,11 @@ p.card-subtitle {
     margin-top: 20px;
 }
 
+h3.card-title_second {
+    margin: 0;
+    padding: 16px;
+}
+
 
 /*************footer**********/
 
@@ -468,8 +477,7 @@ footer {
 
     /*activities*/
 
-    .photo {
-        width: 193px;
+    .photo {        
         height: 270px;
     }
 
