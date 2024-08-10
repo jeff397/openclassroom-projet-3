@@ -359,6 +359,7 @@ p.card-subtitle {
 
 .photo .card-title {
   margin: 20px 19px;
+  padding: 0;
 }
 
 /*************footer**********/
@@ -436,6 +437,19 @@ footer {
 
   .populaires-cards .card-subtitle {
     font-size: 14px;
+  }
+
+  .photo{
+    height: 270px;
+  }
+
+  .photo img{
+    height: 200px;
+  }
+
+  .photo .card-title{
+    margin:0;
+    padding: 16px 0 16px 19px;
   }
 }
 
@@ -625,7 +639,11 @@ footer {
   }
 
   .photo {
-    width: auto;
+    height: 200px;
+  }
+
+  .photo img{
+    height: 141px;
   }
 
   .photo h3,
